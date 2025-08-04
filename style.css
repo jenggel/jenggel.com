@@ -1,0 +1,83 @@
+body {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fff0f0, #ffe0e0);
+  margin: 0;
+  padding-top: 80px;
+  min-height: 100vh;
+}
+
+h1, p {
+  color: #333;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 20px;
+  background-color: tomato;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #e63946;
+  transform: scale(1.05);
+}
+
+/* VIDEO Center */
+.video-container {
+  display: none; /* awalnya disembunyikan, ditampilkan lewat JS */
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.video-container video {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Bagian prank ke-4 */
+#prankImageBox {
+  display: none;
+  margin-top: 30px;
+}
+
+#prankImage {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.button-row {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#prankArea {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: 250px; /* Atur sesuai kebutuhan */
+  margin: 20px auto;
+  overflow: hidden; /* Supaya tombol tidak keluar dari area */
+  border: 2px dashed #ccc; /* Opsional, biar kelihatan */
+  border-radius: 15px;
+}
+
+.button-row button {
+  margin: 0;
+}
+
+/* Tombol "Tidak" gerak */
+#btnTidak {
+  position: relative;
+  transition: left 0.3s ease, top 0.3s ease;
+  max-width: 150px;
+}

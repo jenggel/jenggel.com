@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Jangan Diklik!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1 id="welcomeText">Selamat Datang!</h1>
+  <p id="infoText">Jangan klik tombol di bawah ini ya!</p>
+  <button id="mainButton" onclick="handleClick()">Jangan Diklik!</button>
+
+  <!-- Audio -->
+  <audio id="prankSound" src="assets/kobojawa.m4a"></audio>
+  <audio id="moveSound" src="assets/singsing.m4a"></audio>
+  <audio id="lanjutSound" src="assets/rizz-sounds.mp3" preload="auto"></audio>
+
+
+
+  <!-- Video -->
+  <div class="video-container">
+    <video id="prankVideo" muted controls autoplay>
+      <source src="assets/Milos.mp4" type="video/mp4">
+      Browser kamu tidak mendukung video.
+    </video>
+  </div>
+
+  <!-- Gambar dan Tombol -->
+  <div id="prankImageBox">
+    <img src="assets/foto.jpeg" id="prankImage" alt="Gambar Prank">
+    <div class="prankArea" class="button-row">
+      <button id="btnTidak" onmouseover="gerakButton()" onclick="gerakButton()">Tidak</button>
+      <button id="btnLanjut" onclick="lanjutKeLima()">Lanjut</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
