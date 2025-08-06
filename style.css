@@ -81,3 +81,12 @@ button:hover {
   transition: left 0.3s ease, top 0.3s ease;
   max-width: 150px;
 }
+
+#infoText {
+  font-size: 15px;       /* Ukuran teks, ubah sesuai selera */
+  font-weight: bold;     /* Biar tebal */
+  color: #222;           /* Warna teks */
+  margin: 20px auto;     /* Spasi atas-bawah */
+  max-width: 90%;        /* Biar responsif di HP */
+  line-height: 1.5;      /* Jarak antar baris */
+}

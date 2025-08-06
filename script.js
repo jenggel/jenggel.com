@@ -26,8 +26,8 @@ function handleClick() {
     video.pause();
     video.currentTime = 0;
     videoContainer.style.display = "none";
-    alert("jangan ditekan terus dongo 😑");
-    infoText.textContent = "Ya udah lah, kamu keras kepala banget.";
+    alert("jangan diklik terus dongo 😑");
+    infoText.textContent = "Batu Banget Nih Bocah.";
     mainButton.textContent = "Masih Klik Lagi?";
   } 
   else if (clickCount === 4) {
